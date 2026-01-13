@@ -1,0 +1,84 @@
+:root{
+    --dz-bg: #f7f8fb;
+    --dz-card: #ffffff;
+    --dz-text: #111827;
+    --dz-muted: #6b7280;
+    --dz-border: rgba(17,24,39,.08);
+    --dz-shadow: 0 12px 30px rgba(17,24,39,.08);
+    --dz-radius: 16px;
+  }
+  
+  /* Fond général */
+  body{
+    background: var(--dz-bg);
+    color: var(--dz-text);
+  }
+  
+  /* Navbar plus clean */
+  .navbar{
+    background: rgba(255,255,255,.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--dz-border);
+  }
+  
+  /* Cartes plus premium */
+  .card{
+    background: var(--dz-card);
+    border: 1px solid var(--dz-border);
+    border-radius: var(--dz-radius);
+    box-shadow: 0 1px 0 rgba(17,24,39,.02);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  
+  .card:hover{
+    transform: translateY(-3px);
+    box-shadow: var(--dz-shadow);
+  }
+  
+  /* Boutons */
+  .btn{
+    border-radius: 12px;
+  }
+  
+  .btn-dark{
+    background: #111827;
+    border-color: #111827;
+  }
+  
+  .btn-dark:hover{
+    background: #0b1220;
+    border-color: #0b1220;
+  }
+  
+  /* Images produits */
+  .card img{
+    border-radius: 14px;
+  }
+  
+  /* Titres */
+  h1,h2,h3{
+    letter-spacing: -0.4px;
+  }
+  
+  /* Section À propos */
+  .hero-about{
+    background: linear-gradient(135deg, rgba(17,24,39,.06), rgba(59,130,246,.06));
+  }
+  
+  /* Input recherche */
+  input.form-control{
+    border-radius: 12px;
+    border: 1px solid var(--dz-border);
+    padding: 12px 14px;
+  }
+  
+  input.form-control:focus{
+    box-shadow: 0 0 0 4px rgba(59,130,246,.15);
+    border-color: rgba(59,130,246,.35);
+  }
+  
+  /* Footer */
+  footer{
+    color: var(--dz-muted);
+  }
+  
